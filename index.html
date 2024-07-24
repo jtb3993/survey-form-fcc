@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="My survey form">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Survey form">
+    <meta name="author" content="Josh browb">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 id="title">Survey form template</h1>
+        <p id="description">This is a demo survey form using HTML and CSS only</p>
+      </header>
+      <main>
+        <form id="survey-form">
+          <div class="form-group">
+            <label id="name-label" for="name">Enter Your Name:</label>
+            <input id="name" name="name" type="text" placeholder="Bart Simpson" required />
+          </div>
+          <div class="form-group">
+            <label id="email-label" for="email">Enter Your Email:</label>
+            <input id="email" name="email" type="email" placeholder="example@gmail.com" required />
+          </div>
+          <div class="form-group">
+            <label id="number-label" for="number">Age:</label>
+            <input id="number" name="number" type="number" min="13" max="120" placeholder="21" required />
+          </div>
+          <div class="form-group">
+            <label for="dropdown">How did you hear about us?</label>
+            <select id="dropdown" name="referrer">
+              <option value="">(select one)</option>
+              <option value="1">Google/Other Search Engine</option>
+              <option value="2">Online Blog</option>
+              <option value="3">Social Media</option>
+              <option value="4">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <p>Cats or Dogs?</p>
+            <label><input type="radio" name="animal" value="cat" checked /> Cat</label>
+            <label><input type="radio" name="animal" value="dog" /> Dog</label>
+          </div>
+          <div class="form-group">
+            <p>Select your hobbies:</p>
+            <label><input name="hobbies" type="checkbox" value="sports" /> Sports</label>
+            <label><input name="hobbies" type="checkbox" value="music" /> Music</label>
+            <label><input name="hobbies" type="checkbox" value="gaming" /> Gaming</label>
+            <label><input name="hobbies" type="checkbox" value="hiking" /> Hiking</label>
+            <label><input name="hobbies" type="checkbox" value="tv" /> Watching TV</label>
+            <label><input name="hobbies" type="checkbox" value="other" /> Other</label>
+          </div>
+          <div class="form-group">
+            <label for="comments">Tell us your favourite hobby and why:</label>
+            <textarea id="comments" name="comments" rows="6" placeholder="I love..."></textarea>
+          </div>
+          <button id="submit" type="submit">Submit</button>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
